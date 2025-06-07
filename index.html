@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Victoria Adede Mensah</title>
+        <link href="./output.css" rel="stylesheet" />
+        <style>
+            body {
+                background-image: url("./kees-streefkerk-Adl90-aXYwA-unsplash.jpg");
+                // background-image: url("./nattu-adnan-atSUvc1hMwk-unsplash.jpg");
+                // background-image: url("./amy-humphries-2M_sDJ_agvs-unsplash.jpg");
+                background-size: cover;
+                background-attachment: fixed;
+                background-position: center;
+            }
+        </style>
+    </head>
+    <body class="min-h-screen text-gray-800 font-sans">
+        <div
+            class="bg-white/80 backdrop-blur-xs min-h-screen overflow-y-auto p-1 max-w-fit mx-auto"
+        >
+            <div class="max-w-md mx-auto py-10 px-1 space-y-6">
+                <!-- Profile Header -->
+                <div class="text-center">
+                    <img
+                        src="./profile.webp"
+                        alt="Profile"
+                        class="w-24 h-24 rounded-full mx-auto shadow-md ring-2 ring-white"
+                    />
+                    <h1 class="text-2xl font-bold mt-4">
+                        Victoria Adede Mensah
+                    </h1>
+                    <div
+                        class="flex justify-center gap-4 mt-2 text-gray-600 text-xl"
+                    >
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!-- Biography Card -->
+                <div
+                    class="bg-blue-100 shadow-md rounded p-4 space-y-4 max-w-xl mx-auto"
+                >
+                    <h2
+                        class="font-semibold text-lg text-center border-b border-gray-300"
+                    >
+                        Biography
+                    </h2>
+
+                    <div class="flex justify-center">
+                        <img src="./profile.webp" class="rounded" />
+                    </div>
+
+                    <h3 class="text-sm">Victoria Adede Mensah</h3>
+
+                    <p class="text-xs">
+                        Victoria Adede Mensah was born on November 11, 1992 in
+                        Ghana. At the age of five, in 1998, she moved to Italy,
+                        where she spent most of her life. From a young age,
+                        Victoria demonstrated a strong innate curiosity for
+                        everything around her and a passion for learning, which
+                        led her to undertake various study paths.
+                    </p>
+
+                    <h3 class="text-sm">EDUCATION AND CAREER</h3>
+
+                    <p class="text-xs">
+                        Growing up in a creative environment, influenced by the
+                        work of her mother, a very talented seamstress who ran
+                        her own tailoring shop and taught many apprentices,
+                        Victoria developed a strong sense for fashion
+                    </p>
+
+                    <!-- Show More Button -->
+                    <button
+                        id="show-more-btn"
+                        onclick="toggleBio(true)"
+                        class="text-blue-600 text-xs underline focus:outline-none"
+                    >
+                        Show More →
+                    </button>
+
+                    <!-- Hidden Biography Section -->
+                    <div id="more-bio" class="hidden space-y-4 text-xs">
+                        <p class="text-xs">
+                            and a passion for the world of beauty. Victoria has
+                            obtained various diplomas in diverse fields such as
+                            hospitality food and catering, tourism, real estate,
+                            property management, home stage and beauty
+                            aesthetics...
+                        </p>
+                        <!-- (Add all the remaining paragraphs here — trimmed for brevity) -->
+
+                        <h3 class="text-sm">VICTORIA TODAY</h3>
+
+                        <p class="text-xs">
+                            Our ambitious entrepreneur never stops dreaming big,
+                            in May 2025 Victoria founded Luxour Group...
+                        </p>
+
+                        <p class="text-xs">
+                            Victoria Adede Mensah is therefore an inspiring
+                            example of how passion, determination and curiosity
+                            can drive a person to significant success in
+                            different sectors.
+                        </p>
+
+                        <!-- Show Less Button -->
+                        <button
+                            onclick="toggleBio(false)"
+                            class="text-blue-600 text-xs underline focus:outline-none"
+                        >
+                            ← Show Less
+                        </button>
+                    </div>
+                </div>
+
+                <div
+                    class="border rounded-lg shadow-md overflow-hidden hover:shadow-lg transition"
+                >
+                    <a
+                        href="https://link.mirai.flights/vWG1"
+                        target="_blank"
+                        rel="noopener"
+                        class="flex items-center gap-4 p-4 bg-white hover:bg-gray-50"
+                    >
+                        <!-- Image -->
+                        <div class="flex-shrink-0">
+                            <img
+                                src="https://static.wixstatic.com/media/7ae810_24a1dea24e25459cb2d0e1ee38cb847b~mv2.jpg/v1/crop/x_0,y_135,w_1080,h_1080/fill/w_88,h_88,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/7ae810_24a1dea24e25459cb2d0e1ee38cb847b~mv2.jpg"
+                                alt="Mirai Flights"
+                                class="w-16 h-16 object-cover rounded"
+                            />
+                        </div>
+
+                        <!-- Text Content -->
+                        <div>
+                            <h2 class="text-lg font-semibold text-gray-900">
+                                MIRAI FLIGHTS
+                            </h2>
+                            <p class="text-sm text-gray-600">
+                                Receive a 100€ coupon from your first private
+                                jet flight with Mirai.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- BUSINESS MANUAL Toggle Section -->
+                <div id="card-wrapper">
+                    <!-- Collapsed View -->
+                    <div
+                        id="business-card"
+                        class="border rounded-lg shadow-md overflow-hidden hover:shadow-lg transition"
+                    >
+                        <button
+                            type="button"
+                            onclick="toggleBusinessCard(true)"
+                            class="w-full flex items-center justify-between px-4 py-4 bg-white rounded-lg hover:opacity-90 transition"
+                        >
+                            <h2 class="text-lg font-semibold">
+                                BUSINESS MANUAL
+                            </h2>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="w-5 h-5"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                                stroke-width="2"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M8 10l4 4 4-4"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Expanded View -->
+                    <section
+                        id="business-details"
+                        class="hidden mt-4 bg-white border rounded-lg shadow-md p-4 space-y-4"
+                    >
+                        <header class="border-b pb-2">
+                            <h2 class="text-lg font-semibold">
+                                BUSINESS MANUAL
+                            </h2>
+                        </header>
+
+                        <div>
+                            <p class="text-sm text-gray-700">
+                                Scopri
+                                <strong
+                                    >BUSINESS NOW: Avvia il tuo business</strong
+                                >
+                                - Idee e strategie imprenditoriali di Victoria
+                                Adede Mensah: spedizione gratuita per i clienti
+                                Prime e per ordini a partire da 29€ spediti da
+                                Amazon.
+                            </p>
+                            <p class="mt-2 text-lg font-bold">€8.49</p>
+                        </div>
+
+                        <div>
+                            <a
+                                href="https://www.amazon.it/BUSINESS-NOW-business-strategie-imprenditoriali/dp/B0CMCK7P5Z/"
+                                target="_blank"
+                                class="block w-full bg-black text-white text-center py-2 rounded hover:bg-gray-800 transition"
+                            >
+                                Buy Now
+                            </a>
+                        </div>
+
+                        <div class="flex justify-end">
+                            <button
+                                onclick="toggleBusinessCard(false)"
+                                class="text-sm text-blue-600 hover:underline"
+                            >
+                                ← Back
+                            </button>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- YouTube Subscribe Section -->
+                <section
+                    class="rounded shadow-md bg-blue-100 p-4 space-y-4 max-w-xl mx-auto"
+                >
+                    <header
+                        class="border-b pb-2 flex items-center gap-2 border-gray-300"
+                    >
+                        <img
+                            src="https://static.parastorage.com/services/doppe/3.0.7234/17d3632cfb279c822e0964756ebf35dc.svg"
+                            alt="YouTube Icon"
+                            class="w-6 h-6"
+                        />
+                        <h2 class="text-sm font-semibold uppercase">
+                            Subscribe to Victoria's YouTube Channel
+                        </h2>
+                    </header>
+
+                    <div>
+                        <a
+                            href="https://www.youtube.com/@ivictoriaadedemensah?utm_source=hopp"
+                            target="_blank"
+                            class="block w-full bg-black text-white text-center py-2 rounded hover:bg-gray-800 transition"
+                        >
+                            Follow
+                        </a>
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                        <img
+                            src="https://static.wixstatic.com/media/7ae810_9b7219c806e846f19df7c0094ffaf8bf~mv2.png/v1/fill/w_40,h_59,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/7ae810_9b7219c806e846f19df7c0094ffaf8bf~mv2.png"
+                            alt="Victoria Adede Mensah"
+                            class="w-10 h-10 object-cover rounded"
+                        />
+                        <div class="text-sm font-medium">
+                            Victoria Adede Mensah
+                        </div>
+                    </div>
+                </section>
+
+                <section
+                    class="rounded shadow-md bg-blue-100 p-4 space-y-4 max-w-xl mx-auto"
+                >
+                    <h2
+                        class="font-semibold text-lg text-center border-b border-gray-300"
+                    >
+                        Contact Victoria
+                    </h2>
+                    <form class="space-y-3">
+                        <input
+                            type="text"
+                            name="name"
+                            placeholder="Name"
+                            class="w-full p-2 text-sm border border-gray-300 rounded focus:outline-none focus:ring"
+                        />
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="Email"
+                            class="w-full p-2 text-sm border border-gray-300 rounded focus:outline-none focus:ring"
+                        />
+                        <input
+                            type="tel"
+                            name="tel"
+                            placeholder="Phone"
+                            class="w-full p-2 text-sm border border-gray-300 rounded focus:outline-none focus:ring"
+                        />
+                        <p class="text-xs text-gray-600">
+                            By submitting your contact details, you are
+                            providing your data to Victoria Adede Mensah, who
+                            may contact you for marketing purposes.
+                        </p>
+                        <button
+                            type="submit"
+                            class="w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition"
+                        >
+                            Submit
+                        </button>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </body>
+</html>
+<!-- Script to toggle content -->
+<script>
+    function toggleBio(expand) {
+        const moreBio = document.getElementById("more-bio");
+        const showMoreBtn = document.getElementById("show-more-btn");
+
+        if (expand) {
+            moreBio.classList.remove("hidden");
+            showMoreBtn.classList.add("hidden");
+        } else {
+            moreBio.classList.add("hidden");
+            showMoreBtn.classList.remove("hidden");
+            showMoreBtn.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+    }
+
+    function toggleBusinessCard(expand) {
+        document
+            .getElementById("business-card")
+            .classList.toggle("hidden", expand);
+        document
+            .getElementById("business-details")
+            .classList.toggle("hidden", !expand);
+    }
+</script>
